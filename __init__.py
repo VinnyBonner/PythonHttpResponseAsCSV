@@ -10,3 +10,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     filebytes = bytes(csv, 'utf-8')
 
     return func.HttpResponse(body=filebytes, status_code=200, headers={'Content-Disposition': 'inline; filename="myfile.csv"'}, mimetype='application/octet-stream')
+
+
+
+
+
+
+
